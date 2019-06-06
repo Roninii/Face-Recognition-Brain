@@ -24,7 +24,7 @@ class Register extends React.Component {
   }
 
   onRegister = () => {
-    fetch('https://face-recognition-brain-4293.herokuapp.com/register', {
+    fetch('https://enigmatic-refuge-50705.herokuapp.com/register', {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
