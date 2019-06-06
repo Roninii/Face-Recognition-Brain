@@ -188,7 +188,7 @@ class App extends Component {
 
   onSubmit = () => {
     this.setState({ imgUrl: this.state.input, boxes: [] })
-    fetch('https://face-recognition-brain-4293.herokuapp.com/imageurl', {
+    fetch('https://enigmatic-refuge-50705.herokuapp.com/imageurl', {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -198,7 +198,7 @@ class App extends Component {
       .then((response) => response.json())
       .then((response) => {
         if (response) {
-          fetch('https://face-recognition-brain-4293.herokuapp.com/image', {
+          fetch('https://enigmatic-refuge-50705.herokuapp.com/image', {
             method: 'put',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
